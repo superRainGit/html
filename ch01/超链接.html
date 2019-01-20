@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>超链接</title>
+</head>
+<body>
+    <!-- 
+        使用超链接可以让我们从一个页面跳转到另一个页面
+        使用a标签来创建一个超链接
+        属性:
+            href: 指向链接跳转的目标地址，可以指向相对路径也可以写一个完整的地址
+                如果将链接的地址设置为# 则点击超链接以后 会自动跳转到页面的顶部
+            target: 可以用来指定打开链接的位置
+                可选值:
+                    _self 表示在当前窗口打开(默认值)
+                    _blank 在一个新的窗口中打开链接
+                    可以设置为一个内联框架的名字 链接将会在指定的内联框架内打开
+        
+        html中有一个属性 每一个元素都可以设置 改属性可以作为标签的唯一标识
+        这个属性就是id id属性在同一个页面中只能有一个不能重复
+        
+        该特性可以用于href标签 如果想使用超链接跳转到执行的位置 在href中指定#id即可
+
+        发送邮件的超链接: 可以直接用起系统自带的发邮件的软件 使用方式是在href中指定mailto:邮箱的地址
+    -->
+    <a href="https://www.baidu.com">我是一个超链接</a>
+    <br>
+    <a href="meta标签.html" target="tom">我是一个超链接</a>
+    <br>
+    <iframe src="初试语法.html" frameborder="1" name="tom"></iframe>
+    <br>
+    <a href="mailto:1071471538@qq.com">联系我们</a>
+</body>
+</html>
